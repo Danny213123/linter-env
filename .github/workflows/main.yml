@@ -37,6 +37,7 @@ jobs:
             if [[ $FILE == *.md ]]; then
               echo "Checking metadata in $FILE"
               ERROR=$(python3 metadata-check.py <<< $FILE)
+              echo $ERROR
               if [ '$ERROR' == 1 ]; then
                 echo "Error in $FILE: $ERROR"
                 exit 1
