@@ -33,6 +33,7 @@ def check_metadata(file: str) -> None:
 
 def main():
 
+    print("here")
     file = input()
     print(file)
     check_metadata(file)
