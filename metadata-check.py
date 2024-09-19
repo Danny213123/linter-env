@@ -29,13 +29,11 @@ def check_metadata(file: str) -> None:
 
     missing_text = ' '.join(missing)
     print(f'{file} is missing a metadata field: {missing_text} with error {error}')
-    return error
+    exit(error)
 
 def main():
 
     file = input()
-    error = check_metadata(file)
-    print(error)
-    return error
+    check_metadata(file)
 
 main()
