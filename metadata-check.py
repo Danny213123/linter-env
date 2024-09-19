@@ -34,6 +34,6 @@ def check_metadata(file: str) -> None:
 def main():
 
     file = input()
-    check_metadata(file)
+    return check_metadata(file)
 
 main()
